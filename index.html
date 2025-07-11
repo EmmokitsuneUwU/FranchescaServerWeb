@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Franchesca's server</title>
+        <link rel="stylesheet"href="https://unpkg.com/98.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="window" style="width: 300px; position: relative; top: -10px; left: -330px;">
+        <div class="title-bar">
+            <div class="title-bar-text">Franchesca's server info</div>
+            <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>Haiiii~, Welcome to this server.</p>
+            <p id="time"></p>
+            <ul class="tree-view">
+                <li>Table of Contents</li>
+                    <li>
+                        Services
+                        <ul>
+                        <li>FTP: Anonymous FTP server</li>
+                        <li>Quake 2 server</li>
+                        </ul>
+                    </li>
+            </ul>
+                
+        </div>
+        </div>
+
+        <div class="window" style="width: 300px; position: relative; top: 0px; left: -330px;">
+        <div class="title-bar">
+            <div class="title-bar-text">Services status</div>
+            <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>Server status:</p>
+            <ul class="tree-view">
+                <li>Table of Contents</li>
+                    <li>
+                        Services
+                        <ul>
+                        <li id="statusFTP"></li>
+                        <li id="statusSSH"></li>
+                        <li id="statusHTTP"></li>
+                        <li id="statusQuake2"></li>
+                        <li id="statusMatrix"></li>
+                        </ul>
+                    </li>
+            </ul>
+                
+        </div>
+        </div>
+
+        <div class="window" style="width: 300px; position: relative; top: 0px; left: -330px;">
+        <div class="title-bar">
+            <div class="title-bar-text">Control panel</div>
+            <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>Control panel:</p>
+            <button onclick="window.location.href='basic.html'">Switch to basic mode</button>
+        </div>
+        </div>
+
+        <div class="window" style="width: 300px; position: absolute; top: -10px; left: 35%;">
+        <div class="title-bar">
+            <div class="title-bar-text">News</div>
+            <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>News:</p>
+            <ul class="tree-view">
+                <li>Table of Contents</li>
+                <li>DD/MM/YY</li>
+                <li>
+                    <details closed>
+                    <summary>11/07/2025</summary>
+                    <ul>
+                        <li>TEST</li>
+                    </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
